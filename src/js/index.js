@@ -10,6 +10,8 @@ function validarFormulario(){
         input.classList.add('requerido');
         input.nextElementSibling.classList.add('hidden');
       }else {
+        input.classList.remove('requerido');
+        input.nextElementSibling.classList.remove('hidden');
         input.classList.add('preenchido');
       };
     });
